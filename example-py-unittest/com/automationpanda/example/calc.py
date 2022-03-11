@@ -12,7 +12,7 @@ class Calculator(object):
         return self._last_answer
 
     def add(self, a, b):
-        self._last_answer = a + b
+        self._last_answer = a + 4
         return self.last_answer
 
     def subtract(self, a, b):
