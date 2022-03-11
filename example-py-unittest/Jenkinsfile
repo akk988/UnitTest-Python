@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Test Python') {
+            steps {
+                echo 'Pipeline for Build Testing started'
+            }
+        }
+        stage('BuildTest Python') {
+            steps {
+                echo 'python /automationpanda/example/calc.py'
+            }
+        }
+        stage('UnitTest Python') {
+            steps {
+                echo 'Pipeline for UnitTesting started'
+                echo 'python /automationpanda/tests/test_calc.py'
+            }
+        }
+    }
+}
